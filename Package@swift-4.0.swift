@@ -20,10 +20,10 @@
 import PackageDescription
 
 var dependencies: [Package.Dependency] = [
-    .package(url: "https://github.com/KituraKommunity/LoggerAPI.git", from: "1.7.3"),
-    .package(url: "https://github.com/KituraKommunity/BlueSocket.git", from: "1.0.0"),
+    .package(url: "https://github.com/KituraKommunity/LoggerAPI.git", from: "1.9.100"),
+    .package(url: "https://github.com/KituraKommunity/BlueSocket.git", from: "1.0.100"),
     .package(url: "https://github.com/KituraKommunity/CCurl.git", from: "1.1.0"),
-    .package(url: "https://github.com/KituraKommunity/BlueSSLService.git", from: "1.0.0")
+    .package(url: "https://github.com/KituraKommunity/BlueSSLService.git", from: "1.0.100")
 ]
 
 var kituraNetDependencies: [Target.Dependency] = [
@@ -37,7 +37,7 @@ var kituraNetDependencies: [Target.Dependency] = [
 #if os(Linux)
 dependencies.append(contentsOf: [
     .package(url: "https://github.com/KituraKommunity/CEpoll.git", from: "1.0.0"),
-    .package(url: "https://github.com/KituraKommunity/BlueSignals.git", from: "1.0.0")
+    .package(url: "https://github.com/KituraKommunity/BlueSignals.git", from: "1.0.100")
     ])
 
 kituraNetDependencies.append(contentsOf: [
